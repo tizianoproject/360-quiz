@@ -1,0 +1,42 @@
+<p>
+  <b>Question:</b>
+  <%=h @question.question %>
+</p>
+
+<p>
+  <b>Option1:</b>
+  <%=h @question.option1 %>
+</p>
+
+<p>
+  <b>Option2:</b>
+  <%=h @question.option2 %>
+</p>
+
+<p>
+  <b>Option3:</b>
+  <%=h @question.option3 %>
+</p>
+
+<p>
+  <b>Option4:</b>
+  <%=h @question.option4 %>
+</p>
+
+<p>
+  <b>Key:</b>
+  <%=h @question.key %>
+</p>
+
+<p>
+  <b>Info:</b>
+  <%=h @question.info %>
+</p>
+
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', questions_path %>
+
+<br />
+
+<%= link_to 'Create Another', :controller => "questions", :action => "new" %>

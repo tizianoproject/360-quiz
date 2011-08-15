@@ -1,0 +1,39 @@
+<h1>New question</h1>
+
+<% form_for(@question) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :question %><br />
+    <%= f.text_field :question %>
+  </p>
+  <p>
+    <%= f.label :option1 %><br />
+    <%= f.text_field :option1 %>
+  </p>
+  <p>
+    <%= f.label :option2 %><br />
+    <%= f.text_field :option2 %>
+  </p>
+  <p>
+    <%= f.label :option3 %><br />
+    <%= f.text_field :option3 %>
+  </p>
+  <p>
+    <%= f.label :option4 %><br />
+    <%= f.text_field :option4 %>
+  </p>
+  <p>
+    <%= f.label :key %><br />
+    <%= f.text_field :key %>
+  </p>
+  <p>
+    <%= f.label :info %><br />
+    <%= f.text_field :info %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', questions_path %>
